@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card text-left">
+        <div class="card-header" align="center">
+            FORMULARIO DE DATOS
+        </div>
+        <form action="page.php" method="post" enctype="multipart/form-data">
+            <div class="card-body">
+                <h6>DATOS PERSONALES</h6>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">NOMBRE</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="NOMBRE">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="last_name">APELLIDO</label>
+                        <input type="text" class="form-control" name="last_name" id="last_name" placeholder="APELLIDO">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">EMAIL</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="EMAIL">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="address">DIRECCION</label>
+                        <input type="text" class="form-control" name="address" id="address" placeholder="DIRECCION">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="phone">TELEFONO</label>
+                        <input type="text" class="form-control" name="phone" id="phone" placeholder="TELEFONO" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="date">FECHA DE NACIMIENTO</label>
+                        <input type="date" class="form-control" name="date" id="date" placeholder="FECHA DE NACIMIENTO">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <div class="custom-file">
+                            <label for="fileTest">IMAGEN DE PERFIL/archivo:</label>
+                            <input id="fileTest" name="fileTest" type="file">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="career">CARRERA</label>
+                        <select class="custom-select" name="career" id="career">
+                            <option value="ING. DE SISTEMAS">ING. DE SISTEMAS</option>
+                            <option value="DERECHO">DERECHO</option>
+                            <option value="CONTADURIA PUBLICA">CONTADURIA PUBLICA</option>
+                            <option value="MEDICINA">MEDICINA</option>
+                            <option value="ARQUITECTURA">ARQUITECTURA</option>
+                            <option value="ING. COMERCIAL">ING. COMERCIAL</option>
+                            <option value="ADMINISTRACION DE EMPRESAS">ADMINISTRACION DE EMPRESAS</option>
+                            <option value="ING. CIVIL">ING. CIVIL</option>
+                            <option value="BIOQUIMICA">BIOQUIMICA</option>
+                        </select>
+                    </div>
+                    <hr width="10000">
+                    <h6>CONOCIMIENTOS</h6>
+                    <div class="form-group col-md-12">
+                        <label for="knowledge">CONOCIMIENTO</label>
+                        <select class="custom-select" name="knowledge[]" id="knowledge" multiple>
+                            <option value="CSS3">CSS3</option>
+                            <option value="HTML5">HTML5</option>
+                            <option value="PHP">PHP</option>
+                            <option value="MARIADB">MARIADB</option>
+                            <option value="PHPMYADMIN">PHPMYADMIN</option>
+                            <option value="JAVASCRIPT">JAVASCRIPT</option>
+                            <option value="JAVA">JAVA</option>
+                            <option value="KOTLIN">KOTLIN</option>
+                        </select>
+                    </div>
+                    <hr width="10000">
+                    <h6>EXPERIENCIA</h6>
+                    <div class="form-group col-md-12">
+                        <label for="university">UNIVERSIDAD</label>
+                        <select class="custom-select" name="university" id="university">
+                            <option value="SAN SIMON">SAN SIMON</option>
+                            <option value="UNIVERSIDAD CATOLICA">U. CATOLICA</option>
+                            <option value="UNIVALLE">UNIVALLE</option>
+                            <option value="UNIFRANZ">UNIFRANZ</option>
+                            <option value="UPB">UPB</option>
+                            <option value="UNIVERSIDAD SALESIANA">U. SALESIANA</option>
+                            <option value="upds">UPDS</option>
+                            <option value="UNICEN">UNICEN</option>
+                            <option value="ULAT">ULAT</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="addressu">DIRECCION</label>
+                        <input type="text" class="form-control" name="addressu" id="addressu" placeholder="DIRECCION">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="experience">EXPERIENCIA LABORAL</label>
+                        <textarea name="experience" id="experience" name="experience" cols="100" rows="5" placeholder="Ingrese su experiencia"></textarea>
+                    </div>
+                </div>
+                    <div class="form-row">
+                        <button type="submit" class="btn btn-lg btn-outline-success">Submit</button>
+                    </div>
+            </div>
+            <div class="card-footer text-muted">
+            </div>
+        </form>    
+    </div>
+        
+</body>
+</html>
